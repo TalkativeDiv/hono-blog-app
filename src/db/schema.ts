@@ -9,7 +9,7 @@ export const posts = sqliteTable("posts", {
   title: text("title", { length: 256 }).notNull(),
 
   // content of the blog post
-  content: text("content", { length: 256 }).notNull(),
+  content: text("content").notNull(),
 
   // similarly, the timestamp is set on insert, however it just simply just the current time
   timestamp: text("timestamp")
