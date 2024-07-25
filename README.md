@@ -1,6 +1,6 @@
-# Hono Blog API
+# Hono Blog App
 
-> A Basic API for a blog app (like Medium, Dev.to, Hashnode, etc.) built with Hono, Bun and Cloudflare Workers.
+> A Basic App for a blog app (like Medium, Dev.to, Hashnode, etc.) built with Hono, Bun and Cloudflare Workers.
 
 ## Features
 
@@ -14,13 +14,13 @@
 1. Clone the repository:
 
 ```bash
-$ git clone https://github.com/TalkativeDiv/hono-blog-api.git
+$ git clone https://github.com/TalkativeDiv/hono-blog-app.git
 ```
 
 2. Go into the directory:
 
 ```bash
-$ cd hono-blog-api
+$ cd hono-blog-app
 ```
 
 3. Install the dependencies:
