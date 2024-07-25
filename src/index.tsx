@@ -114,17 +114,7 @@ app.get("/posts", async (c) => {
 
   const db = drizzle(c.env.DB);
   const results = await getPosts(db, user.id);
-  function handleTitleSubmit(e: any, id: number) {
-    e.preventDefault();
-    const title = e.target.title.value;
-    fetch(`/api/posts/edit/title/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify({ title }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  }
+
   return c.render(
     <Fragment>
       <nav
@@ -186,12 +176,10 @@ app.get("/posts", async (c) => {
                 </label>
                 <input
                   type="text"
-                  label="Title"
                   name="title"
-                  id="content"
+                  id="title"
                   placeholder="My Awesome Post!!!"
                   class="form-control"
-                  hasBottomMargin
                   required
                 />
               </div>
@@ -200,7 +188,7 @@ app.get("/posts", async (c) => {
                   Content
                 </label>
                 <textarea
-                  label="Content"
+                  label="tontent"
                   id="content"
                   name="content"
                   class="form-control"

@@ -19,16 +19,16 @@ const postsRouter = new Hono<{ Bindings: Env; Variables: Variables }>();
 postsRouter.post(
   "/",
   zValidator(
-    "json",
+    "form",
     z.object({
-      title: z.string().min(5).max(255),
-      content: z.string().min(10).max(255),
+      title: z.string().min(1).max(255),
+      content: z.string().min(5),
     })
   ),
   async (c) => {
     const db = drizzle(c.env.DB);
     const user = c.get("user");
-    const { title, content } = c.req.valid("json");
+    const { title, content } = c.req.valid("form");
     if (!user) {
       return c.json({ error: "Unauthorized" }, 401);
     }
