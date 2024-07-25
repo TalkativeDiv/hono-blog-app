@@ -6,6 +6,7 @@
 
 - ⚡ Get and Post Articles Blazingly fast using Hono, Drizzle, and D1.
 - 🎨 Beautiful Reliable UI using Bootstrap.
+- 🔒 Secure and simple authentication with Lucia
 - 💾 Serverlessly Hosted on Cloudflare Workers.
 
 ## Deployment

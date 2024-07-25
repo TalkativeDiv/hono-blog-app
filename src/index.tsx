@@ -49,7 +49,7 @@ https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js
           />
           <script src="//unpkg.com/alpinejs" defer></script>
 
-          <title>My App</title>
+          <title>Blog App</title>
         </head>
         <body>
           <noscript>
