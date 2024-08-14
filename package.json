@@ -12,6 +12,7 @@
     "@lucia-auth/adapter-sqlite": "^3.0.2",
     "@types/markdown-it": "^14.1.1",
     "drizzle-orm": "^0.32.0",
+    "fuse.js": "^7.0.0",
     "hono": "^4.5.1",
     "lucia": "^3.2.0",
     "markdown-it": "^14.1.0",
